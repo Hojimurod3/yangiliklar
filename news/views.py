@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def show_image(request):
-    image_path = 'photo/img.png'  # Путь к вашему изображению в директории static
+    image_path = 'photo/img.png'  
     return render(request, 'image_page.html', {'image_path': image_path})
 def news(request):
     return HttpResponse(
