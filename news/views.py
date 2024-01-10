@@ -6,7 +6,7 @@ def show_image(request):
     return render(request, 'image_page.html', {'image_path': image_path})
 def news(request):
     return HttpResponse(
-            '<img src="{% static image_path %}" alt="Изображение"><h1 style="color: red">Yangiliklar</h1><a href ="/news/simple/" > Тошкент шаҳри ҳавосини нималар ифлослаяпти ва уни қандай яхшилаш мумкин?  </a><br><a href="/news/simple/a">UzAuto Motors шартномани қачон очади?</a>'
+            '<img src="{% static image_path %}" alt="Изображение"><h1 style="color: red">Yangiliklar</h1><a href ="/news/simple/news1" > Тошкент шаҳри ҳавосини нималар ифлослаяпти ва уни қандай яхшилаш мумкин?  </a><br><a href="/news/simple/news2">UzAuto Motors шартномани қачон очади?</a>'
                                   )
 def news_simple(request):
     return HttpResponse(
