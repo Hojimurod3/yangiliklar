@@ -1,0 +1,39 @@
+<!-- news_template.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <!-- Ваши стили CSS могут быть подключены здесь -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+
+    <header>
+        <h1>Новости</h1>
+    </header>
+
+    <nav>
+        <!-- Здесь можно добавить навигацию, если необходимо -->
+    </nav>
+
+    <section>
+        {% for article in articles %}
+            <article>
+                <h2>{{ article.title }}</h2>
+                <p>{{ article.description }}</p>
+                <p>Дата публикации: {{ article.publish_date }}</p>
+            </article>
+        {% endfor %}
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ваше Имя / Ваша Компания</p>
+    </footer>
+
+    <!-- Ваши скрипты JavaScript могут быть подключены здесь -->
+    <!-- <script src="script.js"></script> -->
+
+</body>
+</html>
